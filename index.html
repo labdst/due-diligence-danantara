@@ -1,1 +1,174 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ODD Shipyard Dashboard</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+header {
+    background: #1e293b;
+    padding: 20px 10%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.section {
+    padding: 40px 10%;
+}
+
+.kpi-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.score {
+    font-size: 26px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #334155;
+    text-align: left;
+}
+
+th {
+    background-color: #1e293b;
+}
+
+.high-risk {
+    color: #f87171;
+    font-weight: bold;
+}
+
+.good {
+    color: #34d399;
+    font-weight: bold;
+}
+
+button {
+    background: #0ea5e9;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Operational Due Diligence (ODD) Dashboard – Shipyards</h1>
+</header>
+
+<div class="section">
+    <h2>Executive Summary</h2>
+    <div class="card">
+        Evaluation conducted across 8 national shipyards.
+        2 shipyards classified as high priority for strategic intervention.
+        Average ODD score: <span class="score">71.4%</span>.
+    </div>
+</div>
+
+<div class="section">
+    <h2>Shipyard Ranking</h2>
+
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Shipyard</th>
+            <th>ODD Score</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>PT IKI Makassar</td>
+            <td>85%</td>
+            <td class="good">Strategic Asset</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>PT DKB Jakarta</td>
+            <td>78%</td>
+            <td class="good">Stable</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>PT DKB Palembang</td>
+            <td>62%</td>
+            <td class="high-risk">High Risk</td>
+        </tr>
+    </table>
+</div>
+
+<div class="section">
+    <h2>Key Indicators (Aggregated)</h2>
+
+    <div class="kpi-container">
+        <div class="card">
+            Area Capacity Score<br>
+            <div class="score">74%</div>
+        </div>
+
+        <div class="card">
+            Launching Infrastructure<br>
+            <div class="score">69%</div>
+        </div>
+
+        <div class="card">
+            Operational Readiness<br>
+            <div class="score">76%</div>
+        </div>
+
+        <div class="card">
+            Risk Exposure Index<br>
+            <div class="score high-risk">58%</div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Strategic Recommendation</h2>
+    <div class="card">
+        • Prioritize capital injection for high-risk shipyards  
+        • Consolidate mid-tier facilities  
+        • Maintain performance for top-tier shipyards  
+    </div>
+</div>
+
+<div class="section">
+    <h2>Download Full ODD Report</h2>
+    <a href="BUKU_I-Laporan_ODD.pdf" download>
+        <button>Download Detailed Report</button>
+    </a>
+</div>
+
+</body>
+</html>
